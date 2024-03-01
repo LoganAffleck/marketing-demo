@@ -1,6 +1,11 @@
 .hero{
     width: 100vw;
     height: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .heroImage{
@@ -11,13 +16,14 @@
     margin: auto auto;
     left: 0px;
     right: 0px;
+    opacity: .6!important;
 }
 
 .heroWrapper{
     z-index: 2;
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     margin: auto auto;
     display: flex;
     flex-direction: column;
@@ -38,5 +44,14 @@
 }
 
 .button{
+    all: unset;
     background-color: white;
+    padding: 20px 85px;
+    z-index: 2;
+}
+
+.button > * {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
 }

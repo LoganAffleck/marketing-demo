@@ -22,15 +22,15 @@ Builder.registerComponent(Hero, {
   },{
     name: "heroText",
     type: "html",
-    defaultValue: "Lorem ipsum dolor"
+    defaultValue: "Manifest warmer weather in back-in-stock best-sellers—made from the season’s favorite fabric."
   },{
     name: "buttonText",
     type: "text",
-    defaultValue: "Lorem ipsum"
+    defaultValue: "Shop Now"
   },{
     name: "buttonLink",
     type: "Link",
-    defaultValue: "https://www.builder.io"
+    defaultValue: "https://www.builder.io",
   }]
 })
 
@@ -38,6 +38,27 @@ Builder.registerComponent(Hero, {
 Builder.registerComponent(ProductCell, {
   name: "Product Cell",
   image: "https://cdn.builder.io/api/v1/image/assets%2F7b95ea34e4a142b6be7a59cfbc7115f9%2F0d427a60a4fa431aa41c23d969253ee9", 
+  inputs:[
+    {
+      name: "Collection",
+      type: "string",
+      defaultValue: "Apparel",
+      enum: [
+        "Apparel",
+        "Footwear",
+      ]
+    },
+    {
+      name: "product",
+      type: "String",
+      defaultValue: "Default",
+      enum: [
+        "Default",
+        "New short sleeve t-shirt",
+        "Lightweight jacket"
+      ]
+    }
+  ]
 })
 
 Builder.registerComponent(Column,{

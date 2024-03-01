@@ -10,7 +10,10 @@ let Hero = (props) => {
              <div className={styles.heroWrapper}>
                 <h1>{props.heading}</h1>
                 <p className={styles.heroText}>{props.heroText}</p>
-                <Button className={styles.button} text={props.buttonText} link={props.buttonLink}/>
+                <button className={styles.button}>
+                    <Button  text={props.buttonText} link={props.buttonLink}/>
+                </button>
+                
              </div>
 
         </div>
