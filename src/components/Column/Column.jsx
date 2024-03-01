@@ -4,9 +4,7 @@ import styles from "./styles.module.css";
 let Column = () => {
 
     return(
-        <div className={styles.hero}>
-            
-        </div>
+        <p>This component does not do anything</p>
     )
 }
 
